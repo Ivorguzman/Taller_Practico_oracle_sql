@@ -3,7 +3,7 @@ id_empleados int not null, --  not null le indica al sisteme que tiene que ser o
 nombre varchar2(20),-- Datos de tipo caracter y si son menos de 20 caracteres el sistema recorta el espacio sobrante 
 direccion varchar2(50),
 id_documento varchar2(10),
-sueldo number(6,2),
+sueldo number(6,2), -- indica un campo de 6 digitos con 2 decimales.
 fecha_nacimiento date 
 );
 
@@ -14,4 +14,8 @@ INSERT into empleados VALUES(003,'Alexander','calle 3 con calle 4 Las acacias','
 
 
 SELECT * from empleados;
+
+
+
+
 
