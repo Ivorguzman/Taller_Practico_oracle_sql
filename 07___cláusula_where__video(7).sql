@@ -5,6 +5,7 @@
   precio number(7,2)
  );
 
+
  insert into articulos values (1,'impresora','Epson Stylus C45',400.80);
  insert into articulos values (2,'impresora','Epson Stylus C85',500);
  insert into articulos values (3,'monitor','Samsung 14',800);
