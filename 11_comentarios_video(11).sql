@@ -1,10 +1,20 @@
 
-/*   
+/* 
+
+
+
    1.ESTO ES UN COMENTARIO DE BLOQUE
+   
+   
+   
 */
 
 
  -- 2.ESTE ES UN COMETARIO EN LINEA
+ 
+ 
+ 
+ 
  
 /*
 
@@ -32,6 +42,7 @@ clave varchar(10)
 
 */
 
+
 -- drop table usuarios;
 
 create table usuarios (
@@ -41,7 +52,8 @@ clave varchar(10)
 
 show tables; -- consulta para mostrar  la tabla y su contenido
 
-describe usuarios; -- cosulta para mostrar la estrucyura de la tabla
+describe  usuarios -- cosulta para mostrar la estrucyura de la tabla  ;
+
 
 
 
