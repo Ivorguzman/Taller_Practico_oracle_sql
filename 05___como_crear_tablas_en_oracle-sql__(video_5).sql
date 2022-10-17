@@ -1,6 +1,6 @@
-drop table usuarios ;
+drop table usuarios ; -- borra la tabla
 
-CREATE TABLE usuarios(
+CREATE TABLE usuarios( -- crea la tabla
 id_usuario int,
 nombre CHAR(10),
 fecha_nacimiento DATE,
@@ -11,5 +11,5 @@ salario NUMBER(6,2)
  
 select * FROM usuarios;
 
-describe usuarios;
+describe usuarios; -- muestra la estructura de la tabla
 
