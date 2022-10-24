@@ -8,12 +8,16 @@ fecha_nacimiento date
 );
 
 
-describe  empleados;
+describe  empleados ;
 
-INSERT into empleados VALUES(003,'Alexander','calle 3 con calle 4 Las acacias','6213063',4000.01,to_date('01/04/78','dd/mm/yyyy'));
+INSERT into empleados VALUES(001,'Alexander','calle 3 con calle 4 Las acacias','6213063',4000.01,to_date('01/04/78','dd/mm/yyyy'));
+INSERT into empleados VALUES(002,'Ivor','calle 3 con calle 4 Las acacias','6213063',4000.01,to_date('01/04/78','dd/mm/yyyy'));
+INSERT into empleados VALUES(003,'Guzman','calle 3 con calle 4 Las acacias','6213063',4000.01,to_date('01/04/78','dd/mm/yyyy'));
+INSERT into empleados VALUES(004,'Zambrano','calle 3 con calle 4 Las acacias','6213063',4000.01,to_date('01/04/78','dd/mm/yyyy'));
 
 
-SELECT * from empleados;
+
+select * from empleados;
 
 
 

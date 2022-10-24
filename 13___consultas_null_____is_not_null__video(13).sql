@@ -25,15 +25,15 @@
   
 --  Para recuperar registros de una tabla que tenga valores nulos (null)
 --  no se deben utilizar los operadores Igual(=), no Igual(!=)
--- se debe utilizar la clausula [is null] ralaciona todos los valores nulos en iuna tabla
+-- se debe utilizar la clausula [is null] ralaciona todos los valores nulos en una tabla
 
--- cuantos tienen el valor null en la tabla
+-- cuantos laboratorio tienen el valor null en la tabla
 select * from medicamentos where laboratorio is null;
 
 -- consulta medicamento sin informacion de precio
 select * from medicamentos where precio is null;
 
--- Nota : el valor null indica que no existe registro en la tabla
+-- Nota : el valor null indica usencia de valor en el campo de la tabla
 
 select * from  medicamentos where precio = 0;
 
