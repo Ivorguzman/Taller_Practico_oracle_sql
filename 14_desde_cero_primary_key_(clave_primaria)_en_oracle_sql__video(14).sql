@@ -1,7 +1,7 @@
 -- Clave primaria es un campo o varios que identifican un registro unico en una taba ( equivalenta a un ID en programación)
 -- Los valores de una llave primaria son valores unicos un una tabla.
 
- drop table usuarios;
+ -- drop table usuarios;
 
 -- Forma de crear clave primaria
 -- FORMA GRAFICA : TABLA => doble click => nueva tabla => crear campos  => tildar en avanzado => crear compo de clave primaria

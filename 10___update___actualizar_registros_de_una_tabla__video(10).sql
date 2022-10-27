@@ -23,7 +23,7 @@ select * from articulos where  codigo=8 or codigo=3 order by codigo desc;
 
 describe articulos;
  
- -- actualizacion UN campo de un registro  determinado (update .... set .....) (where xxxx=xx) 
+-- actualizacion UN campo de un registro  determinado (update .... set .....) (where xxxx=xx) 
   update articulos  set  nombre = 'impresora' where codigo = 8;
   
 -- actualizar VARIOS campos de un registro  determinado (update .... set .....) (where xxxx=xx) 
