@@ -14,6 +14,7 @@
 -- RPAD() ==> rellena el lado derecho de una cadena con un conjunto específico de caracteres (cuando string1 no es nulo)
 -- LTRIM() ==>  elimina todos los caracteres especificados del lado izquierdo de una cadena.
 -- RTRIM() ==> elimina todos los caracteres especificados del lado derecho de una cadena.
+
 /*
 -- TRIM() 
 TRIM( [ [ LEADING | TRAILING | BOTH ] trim_character FROM ] string1 )
@@ -85,6 +86,54 @@ Consulte también la
 */
 
 -- LENGTH() ==> devuelve la longitud de la cadena especificada.
+
+/*
+-- INSTR() ==> devuelve la ubicación de una subcadena en una cadena.
+La sintaxis de la función: INSTR( string, substring [, start_position [, th_appearance ] ] )
+
+Parámetros o Argumentos
+
+string
+La cadena a buscar. la cadena puede ser CHAR, VARCHAR2, NCHAR, NVARCHAR2, CLOB o NCLOB.
+
+substring
+La subcadena a buscar en string . la subcadena puede ser CHAR, VARCHAR2, NCHAR, NVARCHAR2, CLOB o NCLOB.
+
+start_position
+Opcional. La posición en la cadena donde comenzará la búsqueda. Si se omite, el valor predeterminado es 1.
+La primera posición en la cadena es 1. Si la posición_inicial es negativa,
+la función INSTR cuenta hacia atrás el número de caracteres de la posición_inicial desde el final de la cadena
+y luego busca hacia el comienzo de la cadena .
+
+nth_appearance
+Opcional. La enésima aparición de substring . Si se omite, el valor predeterminado es 1.
+*/
+
+/*
+--  TRANSLATE 
+reemplaza una secuencia de caracteres en una cadena con otro conjunto de caracteres. Sin embargo, reemplaza un solo carácter a la vez.
+
+Por ejemplo, reemplazará el primer carácter en string_to_replace con el primer carácter en replace_string .
+Luego reemplazará el segundo carácter en string_to_replace con el segundo carácter en replace_string , y así sucesivamente.
+
+Sintaxis
+La sintaxis de la función TRANSLATE( string1, string_to_replace, replacement_string )
+
+TRANSLATE( string1, string_to_replace, replacement_string )
+
+Parámetros o Argumentos
+
+string1
+La cadena para reemplazar una secuencia de caracteres con otro conjunto de caracteres.
+
+string_to_replace
+La cadena que se buscará en string1 .
+
+replacement_string
+Todos los caracteres en string_to_replace se reemplazarán con el carácter correspondiente en replace_string .
+
+*/
+
 
 
 
@@ -192,8 +241,17 @@ select RPAD('ORACLE' ,6,'xyz-') from dual;
   select LENGTH('Tech on the Net ')  from dual;
   
   
+  -- INSTR()
+  SELECT INSTR('Tech on the net','e') from  dual;  
+  SELECT INSTR('Tech on the net', 'e',1,1) from  dual; 
+  SELECT INSTR('Tech on the net', 'e', 1, 2) from  dual; 
+  SELECT INSTR('Tech on the net', 'e', 1, 3) from  dual; 
+  SELECT INSTR('Tech on th net', 'e', -3, 2) from  dual; 
    
-    
+  -- TRANSLATE ()
+  SELECT  translate('1tech23', '123', '456') from dual;
+  SELECT  translate('tech123', '123', '456') from dual;
+  select translate('222tech', '2ec', '3it') from dual;
    
 
 
