@@ -14,5 +14,5 @@ select  ROUND(MONTHS_BETWEEN (to_date('01/01/2022','dd/mm/yyyy'),to_date('31/12/
 -- NEXT_DAY( date, weekday ) Retorna el primer día de la semana  mayor que una fecha que se le indica con el parametro dd/mm/aaaa .
 SELECT NEXT_DAY(to_date('25/01/2022','dd/mm/yyyy'),'viernes') from dual;
 
--- Nota : Para estudiar las mas de 20 funciones que tiene oracl-SQL visitar   https://www.techonthenet.com/oracle/functions
+-- Nota : Para estudiar las mas de 20 funciones date que tiene oracl-SQL visitar   https://www.techonthenet.com/oracle/functions
 
