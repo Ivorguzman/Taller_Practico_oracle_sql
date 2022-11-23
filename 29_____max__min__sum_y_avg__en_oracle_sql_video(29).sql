@@ -1,4 +1,4 @@
-drop table empleadoS;
+drop table empleados;
 
  create table empleados(
   nombre varchar2(30),
